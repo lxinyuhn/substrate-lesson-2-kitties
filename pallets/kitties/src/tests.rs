@@ -137,7 +137,7 @@ fn buy_failed_owner_can_not_buy() {
 }
 
 #[test]
-fn set_price_failed_price_too_low() {
+fn buy_failed_price_too_low() {
 	new_test_ext().execute_with(|| {
 		let kitty_id = 1;
 		KittiesModule::set_price(Origin::signed(1), kitty_id, Some(100)).expect("should set the price");
