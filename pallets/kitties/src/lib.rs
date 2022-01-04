@@ -20,7 +20,7 @@ pub mod pallet {
 	use scale_info::TypeInfo;
 
 	#[cfg(feature = "std")]
-	// use frame_support::serde::{Deserialize, Serialize};
+	use frame_support::serde::{Deserialize, Serialize};
 
 	// type AccountOf<T> = <T as frame_system::Config>::AccountId;
 	type BalanceOf<T> =
